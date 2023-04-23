@@ -4,14 +4,14 @@ import HeaderCartButton from './HeaderCartButton';
 
 // Component for Header
 
-const Header = () => {
+const Header = (props) => {
     return (
         <>
             <header className={styles.header}>
                 <h1>ReactMeals</h1>
                 
                 {/* This is a header button component */}
-                <HeaderCartButton></HeaderCartButton>
+                <HeaderCartButton onCLICK={props.onShowCart}></HeaderCartButton>
 
             </header>
             <div className={styles['main-image']}>
