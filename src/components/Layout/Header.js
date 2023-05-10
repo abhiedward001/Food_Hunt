@@ -1,7 +1,7 @@
 import styles from './Header.module.css';
 import mealImage from '../../assets/meals.jpeg';
 import HeaderCartButton from './HeaderCartButton';
-
+// import Search from './Search';
 // Component for Header
 
 const Header = (props) => {
@@ -9,7 +9,8 @@ const Header = (props) => {
         <>
             <header className={styles.header}>
                 <h1>ReactMeals</h1>
-                
+                {/* <Search data="search"></Search> */}
+
                 {/* This is a header button component */}
                 <HeaderCartButton onCLICK={props.onShowCart}></HeaderCartButton>
 
