@@ -1,5 +1,5 @@
 import styles from './Header.module.css';
-import mealImage from '../../assets/meals.jpeg';
+import mealImage from '../../assets/meals1.jpg';
 import HeaderCartButton from './HeaderCartButton';
 // import Search from './Search';
 // Component for Header
@@ -8,7 +8,7 @@ const Header = (props) => {
     return (
         <>
             <header className={styles.header}>
-                <h1>ReactMeals</h1>
+               <h1 className={styles.title}>FoodHunt</h1>
                 {/* <Search data="search"></Search> */}
 
                 {/* This is a header button component */}

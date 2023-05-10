@@ -11,7 +11,7 @@ const HeaderCartButton = (props) => {
 
     const{items}=cartCtx;
     const numberOfItems=items.reduce((curNumber,item)=>{
-        console.log(`${curNumber}-----${item.amount}----${item}--- ${curNumber+item.amount}`);
+        // console.log(`${curNumber}-----${item.amount}----${item}--- ${curNumber+item.amount}`);
         return curNumber+item.amount;
     },0);
 
