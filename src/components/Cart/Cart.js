@@ -24,6 +24,23 @@ const Cart = (props) => {
     const orderButtonHandler = () => {
         setOrderForm(true);
     }
+    
+    const formSubmitHandler= async(userData)=>{
+      const reponse= await fetch('https://fooddatabase-2b318-default-rtdb.asia-southeast1.firebasedatabase.app/orders.json',
+      {
+        method:"POST",
+        cache: "no-cache",
+        headers: {
+            "Content-Type": "application/json",
+            // 'Content-Type': 'application/x-www-form-urlencoded',
+          },
+        body:JSON.stringify({
+            user:userData,
+            orderItems:cartCtx.items
+        })
+      });
+    }
+
     const cartItems = (
         <ul className={styles['cart-items']}>
             {cartCtx.items.map((item) =>
@@ -40,7 +57,7 @@ const Cart = (props) => {
         </ul>
     );
     const cartButtons = <div className={styles.actions}>
-        <button className={styles['button--alt']} onClick={props.onHideCart}>Close</button>
+        <button className={styles['button--alt']}  onClick={props.onHideCart}>Close</button>
         {hasItem && (<button className={styles.button} onClick={orderButtonHandler}>Order</button>)}
     </div>
 
@@ -53,7 +70,7 @@ const Cart = (props) => {
                     <span>{totalAmount}</span>
                 </div>
 
-                {orderForm && <Checkout onCancel={props.onHideCart} />}
+                {orderForm && <Checkout onFormSubmit={formSubmitHandler} onCancel={props.onHideCart} />}
                 {!orderForm && cartButtons}
             </Modal>
         </>

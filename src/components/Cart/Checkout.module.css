@@ -1,8 +1,13 @@
+.formContainer{
+  height: 80vh;
+  overflow: scroll;
+}
 .form {
     margin: 2.5rem 0;
     height: fit-content;
-    overflow: auto;
+    overflow-y: scroll;
     text-align: center;
+    
   }
   
   .control {
@@ -61,10 +66,13 @@
   }
   
   .invalid label {
-    color: #ca3e51;
+    color: #a43e4a;
   }
   
   .invalid input {
     border-color: #aa0b20;
     background-color: #ffeff1;
+  }
+  .invalid p{
+    color: #a43e4a;
   }
