@@ -49,6 +49,7 @@ const Checkout = (props) => {
             city:enteredCity
         }
         props.onFormSubmit(userData);
+        
         nameInputRef.current.value='';
         streetInputRef.current.value='';
         postalInputRef.current.value='';
