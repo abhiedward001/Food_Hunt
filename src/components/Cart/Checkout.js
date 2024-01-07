@@ -16,7 +16,7 @@ const Checkout = (props) => {
     const postalInputRef = useRef();
     const cityInputRef = useRef();
 
-    const isEmpty=(value)=>value.trim()==='';
+    const isEmpty=(value)=>value.trim()===''
     const isSixChars=(value)=>value.trim().length===6;
 
 
