@@ -4,6 +4,7 @@ import Header from './Header';
 import HeaderShowcase from './HeaderShowcase';
 import { useState, useEffect } from 'react';
 import Restuarant from './Restuarants/Restuarant';
+import Footer from './Footer';
 
 
 
@@ -33,6 +34,7 @@ function Home() {
             <Header></Header>
             <HeaderShowcase></HeaderShowcase>
             <Restuarant filterResturants={filterResturants}></Restuarant>
+            <Footer></Footer>
         </div>
 
     )
