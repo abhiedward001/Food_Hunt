@@ -2,7 +2,7 @@ import React from 'react'
 
 function Header() {
     return (
-        <div className="headerContainer  bg-gray-800 h-290 w-full">
+        <div className="headerContainer  bg-gray-800 h-280 w-full mb-4">
             <div className="Header flex justify-between ">
                 <div className="headerIconContainer max-w-20">
                     <img className="h-20 max-w-20" src='https://uploads-ssl.webflow.com/623b199ca2171a083b6bb379/6387cc2b2c00617c6b094716_1024%20x%201024%2048%400.25.png' alt='' />
