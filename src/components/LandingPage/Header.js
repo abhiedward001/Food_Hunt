@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from "react-router-dom";
 function Header() {
     return (
         <div className="headerContainer  bg-gray-800 h-280 w-full mb-4">
@@ -9,8 +9,8 @@ function Header() {
                 </div>
 
                 <ul className="flex  py-4 ">
-                    <li className="px-4 py-2   text-white font-mono text-lg font-bold hover:bg-gray-900 hover:rounded-md antialiased">HOME</li>
-                    <li className="px-4  py-2  text-white font-mono text-lg font-bold hover:bg-gray-900 hover:rounded-md antialiased">Resturants</li>
+                    <li className="px-4 py-2   text-white font-mono text-lg font-bold hover:bg-gray-900 hover:rounded-md antialiased"><Link to='/'> HOME </Link> </li>
+                    <li className="px-4  py-2  text-white font-mono text-lg font-bold hover:bg-gray-900 hover:rounded-md antialiased"><Link to='/restuarant'> Restuarants </Link></li>
                     <li className="px-4  py-2  text-white font-mono text-lg font-bold hover:bg-gray-900 hover:rounded-md antialiased">About Us</li>
                     <button className="login-Btn px-2 py-2 text-white font-mono text-md font-bold hover:bg-gray-900 hover:rounded-md antialiased"> </button>
                 </ul>

@@ -4,6 +4,8 @@
 // import { useState } from "react";
 // import CartProvider from "./Store/CartProvider";
 import Home from "./components/LandingPage/Home";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import reactDOM from "react-dom/client";
 
 
 function App() {
@@ -28,5 +30,17 @@ function App() {
    <Home></Home>
   );
 }
+
+const router=createBrowserRouter([
+  {
+    path:'/',
+    element:<App/>,
+  },
+  
+])
+
+// const root = reactDOM.createRoot(document.getElementById("root"));
+// root.render(<RouterProvider router={router}></RouterProvider>);
+
 
 export default App;
