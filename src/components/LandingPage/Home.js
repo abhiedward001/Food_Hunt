@@ -12,7 +12,7 @@ function Home() {
 
     const [listOfResturants, setListOfResturnts] = useState([]);
     const [filterResturants, setFilterResturants] = useState([]);
-   
+
 
 
     useEffect(() => {
